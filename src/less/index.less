@@ -1,0 +1,74 @@
+@import "variables";
+
+.index-hero{
+  background-color:#000;
+  background-image:url('../images/David-Bowie-Young-Americansbanner.jpg');
+  background-repeat:no-repeat;
+  background-position: center right;
+  background-attachment: fixed;
+  height: 670px;
+
+
+
+  h1{
+    color:@young-americans-red;
+  }
+
+  h2{
+    color:@young-americans-red;
+  }
+
+  h3{
+    color:white;
+  }
+
+  .index-hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 50px;
+  }
+
+}
+
+.index-description{
+
+  .index-description-left{
+    background-image:url('../images/youngamericans.jpeg');
+    background-repeat:no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
+  }
+
+  .index-description-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: @young-americans-red;
+    }
+
+    h2 {
+      max-width: 800px;
+      text-align: center;
+      color: #FFF;
+    }
+
+    ul {
+      list-style-type: none;
+
+      li {
+        color: @young-americans-peach;
+        font-size: 32px;
+      }
+    }
+
+    p {
+      font-size: 40px;
+      color: @young-americans-peach;
+    }
+  }
+}

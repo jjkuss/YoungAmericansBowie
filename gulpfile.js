@@ -25,7 +25,8 @@ var config = {
         },
         css: {
             src: ["src/css/**/*.css"],
-            dest: "build/css"
+            dest: "build/css",
+            srcDest:"src/css"
         },
         images: {
             src: ["src/images/**/*.jpg", "src/images/**/*.jpeg", "src/images/**/*.png"],
@@ -97,9 +98,9 @@ gulp.task("less", function(){
         .pipe(less({
             paths: ["bower_components/bootstrap/less"]
         }))
-        .pipe(uncss({
-            html: glob.sync(config.paths.html.src),
-        }))
+        // .pipe(uncss({
+        //     html: glob.sync(config.paths.html.src),
+        // }))
         .pipe(concat("main.min.css"))
         .pipe(sourcemaps.write("."))
         .pipe(gulp.dest(config.paths.css.dest))

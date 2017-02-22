@@ -1,0 +1,30 @@
+@import "variables";
+nav{
+  background-color:#000;
+  padding-right:30px;
+  border-bottom: 1px solid white;
+
+  ul{
+    list-style-type:none;
+    display:flex;
+    margin-top:26px;
+
+    li{
+      display:inline-block;
+      font-family: "Montserrat","Source Sans Pro",sans-serif;
+      padding-right:15px;
+
+      a{
+        color:@young-americans-red;
+        font-weight:bold;
+
+
+        &:hover{
+          text-decoration:none;
+          color:@young-americans-red;
+          opacity:0.8;
+        }
+      }
+    }
+  }
+}
