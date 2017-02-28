@@ -1,15 +1,20 @@
 @import "includes/bootstrap";
 @import "variables";
 @import "header";
+@import "footer";
 @import "index";
+@import "band";
 @import "utility";
 
 
 body{
   font-size:16px;
+  background-color:#000;
 }
 
 a{cursor:pointer;}
+
+.fluid-img{max-width:100%;height:auto;}
 
 h1{
   font-size:53px;
@@ -26,8 +31,25 @@ h3{
   text-transform: uppercase;
 }
 
+.peach{
+  color:@young-americans-peach;
+}
+
+.red{
+  color:@young-americans-red;
+}
+
+.white{
+  color:#FFF;
+}
+
 .page-section{
   border-bottom:1px solid #FFF;
+  background-color:#000;
+  font-family:"Montserrat","Source Sans Pro",sans-serif;
+}
+
+.page-section-no-border{
   background-color:#000;
   font-family:"Montserrat","Source Sans Pro",sans-serif;
 }

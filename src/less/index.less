@@ -1,26 +1,16 @@
-@import "variables";
 
 .index-hero{
-  background-color:#000;
-  background-image:url('../images/David-Bowie-Young-Americansbanner.jpg');
-  background-repeat:no-repeat;
-  background-position: center right;
-  background-attachment: fixed;
+
   height: 670px;
 
-
-
-  h1{
-    color:@young-americans-red;
+  .index-hero-right{
+    background-image:url('../images/David-Bowie-Young-Americansbanner.jpg');
+    background-repeat:no-repeat;
+    background-position: center right;
+    background-size:contain;
+    height:100%;
   }
 
-  h2{
-    color:@young-americans-red;
-  }
-
-  h3{
-    color:white;
-  }
 
   .index-hero-left{
     display: flex;
@@ -34,41 +24,39 @@
 
 .index-description{
 
-  .index-description-left{
-    background-image:url('../images/youngamericans.jpeg');
-    background-repeat:no-repeat;
-    background-position: center left;
-    background-attachment: fixed;
-  }
+  .index-description-content {
+    text-align: center;
+    padding-top:50px;
+    padding-bottom:50px;
 
-  .index-description-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      color: @young-americans-red;
-    }
 
     h2 {
-      max-width: 800px;
-      text-align: center;
-      color: #FFF;
+      font-size:27px;
     }
 
     ul {
       list-style-type: none;
 
       li {
-        color: @young-americans-peach;
-        font-size: 32px;
+        color: #FFF;
+        font-size: 20px;
       }
     }
 
     p {
       font-size: 40px;
-      color: @young-americans-peach;
     }
+  }
+}
+
+.index-secondary-hero{
+
+  div {
+    background-image: url('../images/youngamericans.jpeg');
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    height:360px;
+    background-attachment: fixed;
   }
 }
