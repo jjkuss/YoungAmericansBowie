@@ -3,13 +3,24 @@
  */
 
 $(document).ready(function (){
+
+    var $siteCanvas =  $("#site-canvas");
     $("#scroll-to-top-link").click(function(){
         $('html,body').animate({ scrollTop: 0 }, 'slow');
     });
 
 
     $("#toggle-mobile-nav").click(function (){
-        $("#site-canvas").toggleClass('show-nav');
+
+        $siteCanvas.toggleClass('show-nav');
+
+        if($siteCanvas.hasClass('show-nav')){
+            $siteCanvas.css('overflow-x','visible');
+        }
+        else{
+            $siteCanvas.css('overflow-x','hidden');
+        }
+
     });
 
     var $navLinks = $("#nav-list li a, #site-menu-list li a ");
