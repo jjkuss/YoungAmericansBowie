@@ -4,14 +4,24 @@
 @import "footer";
 @import "index";
 @import "band";
+@import "gigs";
 @import "utility";
+@import "nav-menu";
 
 
 body{
   font-size:16px;
   background-color:#000;
+  position: relative;
+  width: 100%;
+  overflow-x:hidden;
 }
 
+.hero-header{
+  text-shadow: 2px 1px 6px #FE0000;
+  text-align:center;
+  color:@young-americans-yellow;
+}
 a{cursor:pointer;}
 
 .fluid-img{max-width:100%;height:auto;}
@@ -39,6 +49,10 @@ h3{
   color:@young-americans-red;
 }
 
+.yellow{
+  color:@young-americans-yellow;
+}
+
 .white{
   color:#FFF;
 }
@@ -53,3 +67,4 @@ h3{
   background-color:#000;
   font-family:"Montserrat","Source Sans Pro",sans-serif;
 }
+

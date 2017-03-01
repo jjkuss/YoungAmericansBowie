@@ -11,6 +11,7 @@ var gulp           = require("gulp"),
     less           = require("gulp-less"),
     filter         = require("gulp-filter"),
     glob           = require("glob"),
+    fileInclude    = require("gulp-file-include"),
     browserSync    = require("browser-sync");
 
 var config = {
@@ -56,6 +57,10 @@ gulp.task("html", function(){
             ),
             {name: "bower", addPrefix: "lib"}
         ))
+        .pipe(fileInclude({
+            prefix:"@@",
+            basepath:"@file"
+        }))
         .pipe(minifyHTML())
         .pipe(gulp.dest(config.paths.html.dest));
 });

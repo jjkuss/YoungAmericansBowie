@@ -8,28 +8,47 @@ nav.main-nav{
   height: 115px;
   padding: 0 0 30px 30px;
 
+  .mobile-nav-toggle{
+    display:none;
+    font-size:26px;
+    position:relative;
+    top:40px;
+    left:-20px;
+    cursor:pointer;
 
-  ul{
+    @media screen and (max-width: 768px) {
+      display:block;
+    }
+  }
+
+
+  ul.nav-list{
     list-style-type:none;
     display:flex;
     margin-top:48px;
 
+    @media screen and (max-width: 768px) {
+      display:none;
+    }
+
     li{
+      .navListItem();
       display:inline-block;
-      font-family: "Montserrat","Source Sans Pro",sans-serif;
       padding-right:15px;
 
-      a{
-        color:@young-americans-red;
-        font-weight:bold;
+     a{
+       color:@young-americans-red;
+       font-weight:bold;
 
+       &.current{
+         color:#FFF;
+       }
 
-        &:hover{
-          text-decoration:none;
-          color:@young-americans-red;
-          opacity:0.8;
-        }
-      }
+       &:hover{
+         text-decoration:none;
+         opacity:0.8;
+       }
+     }
     }
   }
 }
