@@ -1,0 +1,43 @@
+@import "variables";
+
+.gigs-hero{
+  background-repeat:no-repeat;
+  height:468px;
+  background-position: center;
+  background-size: contain;
+  text-align:center;
+  background-image:url("../images/UpcomingGigsHero.jpg");
+  background-color:#262425 !important;
+  border-top:1px solid #FFF;
+}
+
+.gigs-content {
+  padding:0 30px 0 30px;
+  .gig-info {
+    padding: 30px 0 30px 0;
+
+    .buy-ticket-link{
+      display:block;
+      width:200px;
+      text-align:center;
+      margin-top:15px;
+      border-width: 2px;
+      border-style: solid;
+      border-radius:10px;
+      border-color: #FFF;
+      padding:15px;
+      color:#FFF;
+      background-color: transparent;
+      -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+      -moz-transition: 0.1s background-color linear, 0.1s color linear;
+      -o-transition: 0.1s background-color linear, 0.1s color linear;
+      transition: 0.1s background-color linear, 0.1s color linear;
+      text-decoration:none;
+
+      &:hover{
+        background-color:#FFF;
+        color:@young-americans-red;
+      }
+    }
+  }
+}
