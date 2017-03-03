@@ -17,6 +17,13 @@
     .index-hero-right {
       margin-top: 25px;
       background-position: center;
+
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .index-hero-right {
+      background-size: cover;
     }
   }
 
@@ -75,5 +82,12 @@
     background-size: contain;
     height: 390px;
     background-attachment: fixed;
+
+    @media screen and (max-width: 500px) {
+      background-image: url(../images/youngamericans_mobile.jpg);
+      background-position: center center;
+      background-size:cover;
+      background-attachment:initial;
+    }
   }
 }
