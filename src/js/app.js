@@ -34,4 +34,17 @@ $(document).ready(function (){
             $(this).addClass('current');
         }
     });
+
+    $("#media-gallery-slider").slick({
+        dots:false,
+        infinite:false,
+        speed:300,
+        slidesToShow:1,
+        adaptiveHeight:true,
+        fade:true,
+        cssEase:'linear',
+        lazyLoad:'ondemand',
+        prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-arrow-left"></i></button>',
+        nextArrow:'<button type="button" class="slick-next"><i class="fa fa-arrow-right"></i></button>'
+    })
 });
