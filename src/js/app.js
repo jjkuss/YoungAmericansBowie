@@ -3,7 +3,6 @@
  */
 
 $(document).ready(function (){
-
     var $siteCanvas =  $("#site-canvas");
     $("#scroll-to-top-link").click(function(){
         $('html,body').animate({ scrollTop: 0 }, 'slow');
@@ -46,5 +45,16 @@ $(document).ready(function (){
         lazyLoad:'ondemand',
         prevArrow:'<button type="button" class="slick-prev"><i class="fa fa-arrow-left"></i></button>',
         nextArrow:'<button type="button" class="slick-next"><i class="fa fa-arrow-right"></i></button>'
-    })
+    });
+
+    if(currentPath === '/gigs.html'){
+        var source = $("#gigs-template").html();
+        var template = Handlebars.compile(source);
+        $.ajax({
+            url: "/data/gigData.json?_=" + new Date().getTime()
+        })
+            .done(function( data ) {
+                $("#gigs").append(template(data));
+            });
+    }
 });

@@ -1,0 +1,53 @@
+{
+  "GigsMap": [
+    {
+        "name":"David Bowie Tribute Night",
+        "date": "Friday, March 13, 2020",
+        "time": "9 PM – 12 AM",
+        "location": "China Gourmet",
+        "facebookEvent": {
+          "name": "Facebook Event - David Bowie Tribute Night",
+          "href": "https://www.facebook.com/events/2407826749469253/"
+        },
+        "googleMapsUrl": "https://www.google.com/maps/place/China+Gourmet/@42.2971095,-71.5070976,13z/data=!4m5!3m4!1s0x89e38988c8f1e2d5:0xcbc783866d2c917d!8m2!3d42.2971095!4d-71.4720787",
+        "description": "'Ground control to Major Tom', you're not gonna wanna miss this live band tribute to one of the most celebrated and unique artists of all time. The Young Americans perform an entire night's worth of Bowie's hits and highly requested fan-favorites. Let's Dance!",
+        "ticketLink": "https://chinagourmet.ticketleap.com/the-young-americans---a-david-bowie-tribute-show/?fbclid=IwAR3DxqCwr3WtvGitS-6Gf827RXKJrvmMWZxoh8q-LSCd-EtV4lpyPyWAaIQ"
+    },
+    {
+        "name":"Turn and Face the Strange - Bowie Night",
+        "date": "Saturday, April 11, 2020",
+        "time": "9PM - 12AM",
+        "facebookEvent": {
+          "name": "Facebook Event - Turn and Face the Strange - Bowie Night",
+          "href": "https://www.facebook.com/events/527833021424525/"
+        },
+        "googleMapsUrl": "https://www.google.com/maps/place/Thunder+Road/@42.3816553,-71.1022561,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37734f6effeef:0xc985cd9f18355057!8m2!3d42.3816553!4d-71.1000674",
+        "description": "The Young Americans are back with a full night of Bowie hits and deep cuts. Ch-ch-change into your favorite glam rock outfit, let the children boogie and everything will be hunky dory.",
+        "ticketLink": "https://www.ticketweb.com/event/the-young-americans-thunder-road-tickets/10326065?pl=thunderroad&fbclid=IwAR2ryBF9QwC7hNsscXP1uUMDSd8Qh3DVM0aYiWPafoYR_hL-iVZERbLyuRc"
+    },
+    {
+        "name":"Bowie Night at the Jetty",
+        "date": "Saturday, May 30, 2020",
+        "time": "9PM - 12AM",
+        "facebookEvent": {
+          "name": "Facebook Event - Bowie Night at the Jetty",
+          "href": "https://www.facebook.com/events/477447039583103/"
+        },
+        "googleMapsUrl": "https://www.google.com/maps/place/The+Jetty/@42.0914423,-70.6466067,17z/data=!3m1!4b1!4m5!3m4!1s0x89e4a7caa3bfca1d:0xe8a0fd6cadab4319!8m2!3d42.0914423!4d-70.644418",
+        "description": "The Young Americans return for a full night of Bowie hits and fan-favorites. Let's Dance! Under the Moonlight – the Serious Moonlight.",
+        "ticketLink": ""
+    },
+    {
+      "name":"Is There Life on Mars? - Bowie Tribute with The Young Americans",
+      "date": "Friday, June 19, 2020",
+      "time": "8:30 PM – 2 AM",
+      "facebookEvent": {
+        "name": "Is There Life on Mars? - Bowie Tribute with The Young Americans",
+        "href": "https://www.facebook.com/events/611428199651614/"
+      },
+      "googleMapsUrl": "https://www.google.com/maps/place/Midway+Caf%C3%A9/@42.3062261,-71.1075396,15z/data=!4m2!3m1!1s0x0:0x4028d8d8cbfed60d?sa=X&ved=2ahUKEwiHvdOu0sDnAhUyrlkKHQPcDQwQ_BIwCnoECBEQCA",
+      "description": "The Young Americans - David Bowie Tribute Band perform a late night tribute to Mr. Hunky Dory himself, David Bowie. Right after the Flower Power Hippie Hour, get ready to freak out in a Moonage Daydream.",
+      "ticketLink": "https://midwaycafe.com/our/details?id=105270&fbclid=IwAR2Drn0_NsZMI9yuzd0jGr2D-LEvVhz5LkotNFOQIQPahU-zNUEd5-RbVnY"
+    }
+  ]
+}

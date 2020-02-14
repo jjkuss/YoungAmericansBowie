@@ -17,45 +17,29 @@
         <section class="gigs-hero page-section row">
             <h1 class="hero-header">Upcoming Shows</h1>
         </section>
-        <section class="gigs-content page-section row">
-            <div class="gig-info">
-                <h2 class="red">David Bowie Tribute Night</h2>
-                <p class="white">Friday, July 12, 2019</p>
-                <p class="white">9:00 PM - 12:00 AM</p>
-                <a class="block facebook-link" target="_blank" href="https://www.facebook.com/events/384229028975773/">Facebook Event</a>
-                <p class="white">Thunder Road Music Club, Somervile, MA
-                    <a class="block map-link" target="_blank" href="https://www.google.com/maps/place/Thunder+Road/@42.3816553,-71.1022561,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37734f6effeef:0xc985cd9f18355057!8m2!3d42.3816553!4d-71.1000674">Map</a>
-                </p>
-                <p class="white">The Young Americans are back to deliver a live performance of Bowie favorites, rarities, and surprises. Let's Dance Magic Dance!.</p>
-                <a class="buy-ticket-link" href="https://www.ticketweb.com/event/the-young-americans-thunder-road-tickets/9647005?pl=thunderroad&fbclid=IwAR0yzP71i6zZGBDcOr2sdRxO_XA5AUCR6kgU5iUN56SVmW4lXhos8iz9mpU" target="_blank">Tickets</a>
-            </div>
-        </section>
-        <section class="gigs-content page-section row">
-            <div class="gig-info">
-                <h2 class="red">David Bowie Tribute Night with The Young Americans</h2>
-                <p class="white">Saturday, August 3, 2019</p>
-                <p class="white">9:00 PM - 12:00 AM</p>
-                <a class="block facebook-link" target="_blank" href="https://www.facebook.com/events/456448701776384/">Facebook Event</a>
-                <p class="white">Down the Road Beer Co., Everett, MA
-                    <a class="block map-link" target="_blank" href="https://www.google.com/maps/place/Down+the+Road+Beer+Co./@42.3970334,-71.0638394,15z/data=!4m5!3m4!1s0x0:0x1d64e3a47ca55b53!8m2!3d42.3985863!4d-71.0612645">Map</a>
-                </p>
-                <p class="white">The Young Americans perform a full night of Bowie classics and rarities. 21+</p>
-            </div>
-        </section>
-        <section class="gigs-content page-section row">
-            <div class="gig-info">
-                <h2 class="red">Bowie Tribute Night with The Young Americans</h2>
-                <p class="white">Friday, August 30, 2019</p>
-                <p class="white">10:30 PM - 1:30 PM</p>
-                <a class="block facebook-link" target="_blank" href="https://www.facebook.com/events/2244947945756398/">Facebook Event</a>
-                <p class="white">Midway Cafe, Jamaica Plain, MA
-                    <a class="block map-link" target="_blank" href="https://www.google.com/maps/place/Midway+Caf%C3%A9/@42.3062261,-71.1075396,15z/data=!4m2!3m1!1s0x0:0x4028d8d8cbfed60d?sa=X&ved=2ahUKEwi20-KEhq7iAhVmvFkKHU5KB1gQ_BIwCnoECA8QCA">Map</a>
-                </p>
-                <p class="white">Bowie tunes allllll night after 10:30.</p>
-                <a class="buy-ticket-link" href="https://midwaycafe.com/our/details?id=104690&fbclid=IwAR1zUP9b9uJ_x6daLLgra0wuDIG2Tjz6ixio_rXpOkYfq_1EVCK8iwARfQc" target="_blank">Tickets</a>
-            </div>
-        </section>
-
+        <!-- Template -->
+        <script id="gigs-template" type="text/x-handlebarstemplate">
+            {{#each GigsMap}}
+            <section class="gigs-content page-section row">
+                <div class="gig-info">
+                    <h2 class="red">{{this.name}}</h2>
+                    <p class="white">{{this.location}}
+                        <a class="block map-link" target="_blank" href="{{{googleMapsUrl}}}">Map</a>
+                    </p>
+                    <p class="white">{{this.date}}</p>
+                    <p class="white">{{this.time}}</p>
+                    <a class="block facebook-link" target="_blank" href="{{{this.facebookEvent.href}}}">{{this.facebookEvent.name}}</a>
+                    <p class="white">{{this.description}}</p>
+                    {{#if this.ticketLink}}
+                    <a class="buy-ticket-link" href="{{{this.ticketLink}}}" target="_blank">Tickets</a>
+                    {{/if}}
+                </div>
+            </section>
+            {{/each}}
+        </script>
+        <div id="gigs">
+            <!-- Gigs to go here -->
+        </div>
         @@include('./includes/footer.html')
     </div>
 </div>
