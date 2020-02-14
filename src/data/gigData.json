@@ -4,7 +4,7 @@
         "name":"David Bowie Tribute Night",
         "date": "Friday, March 13, 2020",
         "time": "9 PM – 12 AM",
-        "location": "China Gourmet",
+        "location": "China Gourmet - Framingham, MA",
         "facebookEvent": {
           "name": "Facebook Event - David Bowie Tribute Night",
           "href": "https://www.facebook.com/events/2407826749469253/"
@@ -17,6 +17,7 @@
         "name":"Turn and Face the Strange - Bowie Night",
         "date": "Saturday, April 11, 2020",
         "time": "9PM - 12AM",
+        "location": "Thunder Road - Somerville, MA",
         "facebookEvent": {
           "name": "Facebook Event - Turn and Face the Strange - Bowie Night",
           "href": "https://www.facebook.com/events/527833021424525/"
@@ -29,6 +30,7 @@
         "name":"Bowie Night at the Jetty",
         "date": "Saturday, May 30, 2020",
         "time": "9PM - 12AM",
+        "location": "The Jetty - Marshfield, MA",
         "facebookEvent": {
           "name": "Facebook Event - Bowie Night at the Jetty",
           "href": "https://www.facebook.com/events/477447039583103/"
@@ -38,9 +40,22 @@
         "ticketLink": ""
     },
     {
+      "name":"Ground Control to Major Tom - Bowie Night",
+      "date": "Friday, June 5, 2020",
+      "time": "8:00 PM – 10:00 PM",
+      "location": "Night Shift Brewing - Everett, MA",
+      "facebookEvent": {
+        "name": "Ground Control to Major Tom - Bowie Night",
+        "href": "https://www.facebook.com/events/801519616992714/"
+      },
+      "googleMapsUrl": "https://www.google.com/maps/place/Night+Shift+Brewing+-+Everett/@42.4059707,-71.067886,15z/data=!4m2!3m1!1s0x0:0xc68b7f0434ddb595?sa=X&ved=2ahUKEwi4gObYotDnAhXOJt8KHfdVDYUQ_BIwEHoECBAQCA",
+      "description": "Put on your red shoes and drink some brews. David Bowie Tribute Band “The Young Americans” play all the hits and a mix of fan favorites. Let’s Dance!"
+    },
+    {
       "name":"Is There Life on Mars? - Bowie Tribute with The Young Americans",
       "date": "Friday, June 19, 2020",
       "time": "8:30 PM – 2 AM",
+      "location": "Midway Cafe - Jamaica Plain, MA",
       "facebookEvent": {
         "name": "Is There Life on Mars? - Bowie Tribute with The Young Americans",
         "href": "https://www.facebook.com/events/611428199651614/"

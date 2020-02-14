@@ -1,12 +1,23 @@
 @import "variables";
-nav.main-nav{
+nav.main-nav {
   border-bottom: 1px solid white;
-  //background-image:url('../images/YoungAmericansLogo.png');
-  //background-position:15px;
-  //background-repeat:no-repeat;
-  //background-size: 176px 87px;
   height: 115px;
   padding: 0 0 30px 30px;
+
+  .header-band-description {
+    font-size: 20px;
+    color: @young-americans-red;
+    font-weight: bold;
+    font-family: "Montserrat", "Source Sans Pro", sans-serif;
+    padding-top: 30px;
+    padding-left: 20px;
+    display: inline-block;
+    width: 264px;
+
+    @media only screen and (max-width: 1050px) {
+      display: none;
+    }
+  }
 
   .logo-link{
     display:block;
@@ -15,7 +26,7 @@ nav.main-nav{
     background-image:url('../images/YoungAmericansLogo.png');
     background-repeat:no-repeat;
     background-size: 176px 87px;
-   margin-top:12px;
+    margin-top:12px;
 
   }
 
