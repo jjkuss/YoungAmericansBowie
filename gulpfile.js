@@ -126,7 +126,12 @@ gulp.task("browser-sync", function() {
     });
 });
 
-gulp.task("build", ["bower", "html", "scripts", "css", "less", "images", "verbatim"]);
+gulp.task('copy-data', function() {
+    return gulp.src('./src/data/*.json')
+        .pipe(gulp.dest('./build/data'));
+});
+
+gulp.task("build", ["bower", "html", "scripts", "css", "less", "images", "verbatim", "copy-data"]);
 
 gulp.task("default", ["build", "browser-sync"], function(){
     gulp.watch(config.paths.html.src, ["html", browserSync.reload]);
